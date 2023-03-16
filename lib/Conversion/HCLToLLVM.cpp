@@ -273,6 +273,7 @@ bool applyHCLToLLVMLoweringPass(ModuleOp &module, MLIRContext &context) {
 
   populateExpandCtlzPattern(patterns);
   populateExpandTanhPattern(patterns);
+  populateExpandTanPattern(patterns);
   populateMathAlgebraicSimplificationPatterns(patterns);
   populateMathPolynomialApproximationPatterns(patterns);
   populateMathToLLVMConversionPatterns(typeConverter, patterns);
